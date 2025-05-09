@@ -35,7 +35,7 @@ entity Program_Counter is
     Port ( RESET : in STD_LOGIC;
            CLK : in STD_LOGIC;
            Memory_Select : out STD_LOGIC_VECTOR (2 downto 0));
-end Program_counter;
+end Program_Counter;
 
 architecture Behavioral of Program_Counter is
 
