@@ -59,11 +59,12 @@ UUT : Program_Counter
     Next_Address => next_address,
     Memory_Select => q);
 
-process begin
+ clk_process: process begin
+        
     clk <= NOT(clk);
     
     WAIT FOR 10ns;
-end process;
+end process clk_process;
  
 process begin
 
