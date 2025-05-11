@@ -47,7 +47,7 @@ END COMPONENT;
 signal res: std_logic;
 signal clk : std_logic := '0';
 signal q : std_logic_vector(2 downto 0);
-signal next_address : std_logic_vector (2 downto 0);
+signal next_address: std_logic_vector (2 downto 0);
 
            
 
@@ -58,6 +58,12 @@ UUT : Program_Counter
     CLK => clk,
     Next_Address => next_address,
     Memory_Select => q);
+
+process begin
+    clk <= NOT(clk);
+    
+    WAIT FOR 10ns;
+end process;
  
 process begin
 
@@ -84,13 +90,7 @@ process begin
         next_address <= "111";
     
     WAIT ;
-end process;
 
-process begin
-    clk<= NOT(clk);
-    
-    WAIT FOR 10ns;
 end process;
-
 
 end Behavioral;
