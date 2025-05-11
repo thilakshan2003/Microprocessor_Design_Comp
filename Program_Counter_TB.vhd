@@ -40,12 +40,14 @@ architecture Behavioral of Program_Counter_TB is
 COMPONENT Program_Counter
 Port ( RESET : in STD_LOGIC;
        CLK : in STD_LOGIC;
+       Next_Address : in STD_LOGIC_VECTOR (2 downto 0);
        Memory_Select : out STD_LOGIC_VECTOR (2 downto 0));
 END COMPONENT;
 
 signal res: std_logic;
 signal clk : std_logic := '0';
 signal q : std_logic_vector(2 downto 0);
+signal next_address : std_logic_vector (2 downto 0);
 
            
 
@@ -54,6 +56,7 @@ UUT : Program_Counter
     PORT MAP (
     RESET => res,
     CLK => clk,
+    Next_Address => next_address,
     Memory_Select => q);
  
 process begin
@@ -62,7 +65,23 @@ process begin
     
     WAIT FOR 100 ns;
     res <= '0';
+    next_address <= "001";
+    
+    WAIT FOR 100 ns;
+        res <= '0';
+        next_address <= "001";
+        
+    WAIT FOR 100 ns;
+      
+        next_address <= "010";
 
+    WAIT FOR 100 ns;
+        res <= '1';
+        next_address <= "011";
+    
+    WAIT FOR 100 ns;
+        res <= '0';
+        next_address <= "111";
     
     WAIT ;
 end process;
