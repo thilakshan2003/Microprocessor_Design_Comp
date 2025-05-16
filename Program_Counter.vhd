@@ -40,36 +40,21 @@ end Program_Counter;
 
 architecture Behavioral of Program_Counter is
 
-COMPONENT D_FF 
-    Port ( D : in STD_LOGIC;
-           RES : in STD_LOGIC;
-           CLK : in STD_LOGIC;
-           Q : out STD_LOGIC;
-           QBar : out STD_LOGIC);
+
 END COMPONENT;
 
 begin
 
-D_FF_0: D_FF
-PORT MAP (
-    D => Next_Address(0),
-    RES => RESET,
-    CLK => CLK,
-    Q => Memory_Select(0));
-    
-D_FF_1: D_FF
-    PORT MAP (
-        D => Next_Address(1),
-        RES => RESET,
-        CLK => CLK,
-        Q => Memory_Select(1));
-        
-D_FF_2: D_FF
-    PORT MAP (
-        D => Next_Address(2),
-        RES => RESET,
-        CLK => CLK,
-        Q => Memory_Select(2));
+process(CLK)
+begin
+  if rising_edge(CLK) then
+    if RESET = '1' then
+      Memory_Select <= "0000";
+    else
+      Memory_Select <= Next_Address;
+    end if;
+  end if;
+end process;
 
 
 end Behavioral;
