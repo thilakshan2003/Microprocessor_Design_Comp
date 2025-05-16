@@ -37,7 +37,7 @@ entity Instruction_Decoder is
            Reg_Enabler : out STD_LOGIC_VECTOR (2 downto 0);
            Reg_A_Selector : out STD_LOGIC_VECTOR (2 downto 0);
            Reg_B_Selector : out STD_LOGIC_VECTOR (2 downto 0);
-           Reg_Bank_Enabler : out STD_LOGIC;
+          
            Load_Selector : out STD_LOGIC;
            Imd_Value : out STD_LOGIC_VECTOR (3 downto 0);
            Add_Sub_Selector : out STD_LOGIC;
@@ -52,7 +52,7 @@ begin
 Load_Selector <= Instruction(11);
 Add_Sub_Selector <= Instruction(10);
 
-Reg_Bank_Enabler <= Instruction(11) NAND Instruction(10);
+
 Reg_Enabler <= Instruction(9 downto 7);
 Reg_A_Selector <= Instruction (9 downto 7);
 Reg_B_Selector <= Instruction (6 downto 4);
