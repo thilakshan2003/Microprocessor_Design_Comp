@@ -118,6 +118,18 @@ Sub <= '1';
 
 wait for 100ns;
 
+A <= "0000";
+B <= "0000";
+Sub <= '0';
+
+wait for 100ns;
+
+A <= "0011";
+B <= "0011";
+Sub <= '1';
+
+wait for 100ns;
+
 wait;
 end process;
 
