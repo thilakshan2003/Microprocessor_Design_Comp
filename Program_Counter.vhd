@@ -41,8 +41,6 @@ end Program_Counter;
 architecture Behavioral of Program_Counter is
 
 
-END COMPONENT;
-
 begin
 
 process(CLK)
