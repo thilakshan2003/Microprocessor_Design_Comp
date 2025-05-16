@@ -98,8 +98,17 @@ begin
     );
     
     Sum <= Sum_out;
-    Zero <= NOT( Sum_out(0) OR Sum_out(1) OR Sum_out(2) OR Sum_out(3));
-    Overflow <= carry_3 XOR carry_2;
+    
+    process(Sum_out)
+    begin
+        if Sum_out= "0000" then
+            Zero <= '1';
+        else
+            Zero <= '0';
+        end if;
+    end process;
+        
+    Overflow <= carry_3 ;
     
 
 
