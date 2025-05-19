@@ -1,0 +1,7 @@
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+ERROR: Index 4 out of bound 0 to 3
+Time: 790 ns  Iteration: 4  Process: /Nanoprocessor_TB/UUT/ProgramROM/line__82
+  File: C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Microprocessor_Final/MP_Final/MP_Final.srcs/sources_1/new/Program_ROM.vhd
+
+HDL Line: C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Microprocessor_Final/MP_Final/MP_Final.srcs/sources_1/new/Program_ROM.vhd:82

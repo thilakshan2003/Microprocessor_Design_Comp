@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 
 
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -32,27 +33,31 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Program_Counter is
-    Port ( RESET : in STD_LOGIC;
-           CLK : in STD_LOGIC;
-           Next_Address : in STD_LOGIC_VECTOR (2 downto 0);
-           Memory_Select : out STD_LOGIC_VECTOR (2 downto 0));
+  Port (
+    CLK           : in  STD_LOGIC;
+    RESET         : in  STD_LOGIC;
+    Next_Address  : in  STD_LOGIC_VECTOR(2 downto 0);
+    Memory_Select : out STD_LOGIC_VECTOR(2 downto 0)
+  );
 end Program_Counter;
 
 architecture Behavioral of Program_Counter is
+signal PC_Reg : std_logic_vector (2 downto 0):= "000";
 
-
-begin
-
+begin 
+ 
 process(CLK)
 begin
-  if rising_edge(CLK) then
+ 
     if RESET = '1' then
-      Memory_Select <= "0000";
-    else
-      Memory_Select <= Next_Address;
-    end if;
-  end if;
+        PC_Reg <= "000";
+    else if rising_edge(CLK) then
+        PC_Reg <= Next_Address;
+ 
+end if;
+end if;
 end process;
 
+Memory_Select <= PC_Reg;
 
 end Behavioral;

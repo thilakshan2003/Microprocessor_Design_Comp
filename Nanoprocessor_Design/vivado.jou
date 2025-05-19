@@ -1,0 +1,85 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri May 16 15:08:20 2025
+# Process ID: 20256
+# Current directory: C:/Users/senil/Documents/GitHub/Microprocessor_Design_Comp/Nanoprocessor_Design
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22664 C:\Users\senil\Documents\GitHub\Microprocessor_Design_Comp\Nanoprocessor_Design\Nanoprocessor_Design.xpr
+# Log file: C:/Users/senil/Documents/GitHub/Microprocessor_Design_Comp/Nanoprocessor_Design/vivado.log
+# Journal file: C:/Users/senil/Documents/GitHub/Microprocessor_Design_Comp/Nanoprocessor_Design\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/senil/Documents/GitHub/Microprocessor_Design_Comp/Nanoprocessor_Design/Nanoprocessor_Design.xpr
+save_project_as Nanoprocessor {C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor} -force
+launch_simulation
+source Register_Bank.tcl
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+add_files -norecurse {{C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sources_1/imports/new/3_Bit_Adder.vhd}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sources_1/imports/new/3_Bit_Adder.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sources_1/imports/new/3_Bit_Adder.vhd}}
+file delete -force {C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sources_1/imports/new/3_Bit_Adder.vhd}
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Nanoprocessor [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+add_files -norecurse C:/Users/senil/Desktop/3_Bit_Adder.vhd
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+open_run impl_1
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+add_files -norecurse {{C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Lab 7/Lab 7.srcs/sources_1/new/D_FF.vhd}}
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+refresh_design
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+refresh_design
+report_utilization -name utilization_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+file mkdir C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sim_1/new
+file mkdir C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sim_1/new
+file mkdir C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sim_1/new
+file mkdir C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sim_1/new
+file mkdir C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sim_1/new
+file mkdir {C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sim_1/new}
+close [ open {C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sim_1/new/TB_Nanoprocessor.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sim_1/new/TB_Nanoprocessor.vhd}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sim_1/new/TB_Nanoprocessor.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sim_1/new/TB_Nanoprocessor.vhd}}
+file delete -force {C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sim_1/new/TB_Nanoprocessor.vhd}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sim_1/new/TB_Nanoprocessor.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Nanoprocessor/Nanoprocessor.srcs/sim_1/new/TB_Nanoprocessor.vhd}}
+launch_simulation
+source Nanoprocessor.tcl
+close_sim
+launch_simulation
+source Nanoprocessor.tcl
+close_sim
+launch_simulation
+source Nanoprocessor.tcl
+close_sim
+launch_simulation
+source Nanoprocessor.tcl
+close_sim
+launch_simulation
+source Nanoprocessor.tcl
+current_design impl_1
+report_utilization -name utilization_2
+close_sim
+close_sim
+close_project
