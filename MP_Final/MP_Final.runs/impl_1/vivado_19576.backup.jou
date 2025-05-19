@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon May 19 17:34:12 2025
+# Process ID: 19576
+# Current directory: C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Microprocessor_Final/MP_Final/MP_Final.runs/impl_1
+# Command line: vivado.exe -log Nanoprocessor_Interface.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Nanoprocessor_Interface.tcl -notrace
+# Log file: C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Microprocessor_Final/MP_Final/MP_Final.runs/impl_1/Nanoprocessor_Interface.vdi
+# Journal file: C:/Users/senil/Documents/Files/UoM/Academic/Sem 2/Digital Design/Labs/Microprocessor_Final/MP_Final/MP_Final.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Nanoprocessor_Interface.tcl -notrace

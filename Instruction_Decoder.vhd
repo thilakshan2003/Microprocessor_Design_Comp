@@ -46,7 +46,7 @@ entity Instruction_Decoder is
 end Instruction_Decoder;
 
 architecture Behavioral of Instruction_Decoder is
-
+signal internal_jump_flag : std_logic := '0';
 begin
 
 Load_Selector <= Instruction(11);
@@ -62,14 +62,14 @@ Imd_Value <= Instruction(3 downto 0);
  process (Instruction, Reg_Jump_Check)
    begin
        if (Reg_Jump_Check = "0000" and Instruction(11) = '1' and Instruction(10) = '1') then
-           Jump_Flag <= '1';
+           internal_jump_flag <= '1';
        else
-           Jump_Flag <= '0';
+           internal_jump_flag <= '0';
        end if;
    end process;
 
 Jump_Address <= Instruction(2 downto 0);
-
+Jump_Flag <= internal_jump_flag;
 
 end Behavioral;
  

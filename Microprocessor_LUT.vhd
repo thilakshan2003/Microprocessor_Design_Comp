@@ -32,12 +32,12 @@ use ieee.numeric_std.all;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Microprocessor_LUT is
-    Port ( address : in STD_LOGIC_VECTOR (2 downto 0);
-           data : out STD_LOGIC_VECTOR (11 downto 0));
-end Microprocessor_LUT;
+entity Program_ROM is
+    Port ( Address : in STD_LOGIC_VECTOR (2 downto 0);
+           Instruction_Out : out STD_LOGIC_VECTOR (11 downto 0));
+end Program_ROM;
 
-architecture Behavioral of Microprocessor_LUT is
+architecture Behavioral of Program_ROM is
 
 type rom_type is array (0 to 7) of std_logic_vector(11 downto 0);
     
@@ -54,7 +54,7 @@ signal Assembly_program_ROM : rom_type := (
 ); 
 
 begin
-data <= Assembly_program_ROM(to_integer(unsigned(address))); 
+Instruction_Out <= Assembly_program_ROM(to_integer(unsigned(Address))); 
 
 
 end Behavioral;

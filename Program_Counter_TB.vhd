@@ -46,8 +46,9 @@ END COMPONENT;
 
 signal res: std_logic;
 signal clk : std_logic := '0';
-signal q : std_logic_vector(2 downto 0);
 signal next_address : std_logic_vector (2 downto 0);
+signal memory_select : std_logic_vector(2 downto 0);
+
 
            
 
@@ -57,19 +58,16 @@ UUT : Program_Counter
     RESET => res,
     CLK => clk,
     Next_Address => next_address,
-    Memory_Select => q);
+    Memory_Select => memory_select);
  
 process begin
 
-    res <= '1';
-    
-    WAIT FOR 100 ns;
-    res <= '0';
-    next_address <= "001";
+        res <= '1';
     
     WAIT FOR 100 ns;
         res <= '0';
         next_address <= "001";
+        
         
     WAIT FOR 100 ns;
       
@@ -81,6 +79,9 @@ process begin
     
     WAIT FOR 100 ns;
         res <= '0';
+        next_address <= "011";
+        
+    WAIT FOR 100 ns;
         next_address <= "111";
     
     WAIT ;

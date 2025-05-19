@@ -43,7 +43,7 @@ Port ( Instruction : in STD_LOGIC_VECTOR (11 downto 0);
            Reg_Enabler : out STD_LOGIC_VECTOR (2 downto 0);
            Reg_A_Selector : out STD_LOGIC_VECTOR (2 downto 0);
            Reg_B_Selector : out STD_LOGIC_VECTOR (2 downto 0);
-           Reg_Bank_Enabler : out STD_LOGIC;
+          
            Load_Selector : out STD_LOGIC;
            Imd_Value : out STD_LOGIC_VECTOR (3 downto 0);
            Add_Sub_Selector : out STD_LOGIC;
@@ -56,7 +56,7 @@ END COMPONENT;
 signal Instruction : STD_LOGIC_VECTOR(11 downto 0);
 signal Reg_Jump_Check, Imd_Value : STD_LOGIC_VECTOR(3 downto 0);
 signal Reg_Enabler, Reg_A_Selector, Reg_B_Selector, Jump_Address : STD_LOGIC_VECTOR(2 downto 0);
-signal Reg_Bank_Enabler, Load_Selector, Add_Sub_Selector, Jump_Flag : STD_LOGIC;
+signal Load_Selector, Add_Sub_Selector, Jump_Flag : STD_LOGIC;
 
 begin
 
@@ -69,7 +69,7 @@ Port Map(
     Reg_A_Selector => Reg_A_Selector,
     Reg_B_Selector => Reg_B_Selector,
     Jump_Address => Jump_Address,
-    Reg_Bank_Enabler => Reg_Bank_Enabler,
+   
     Load_Selector => Load_Selector,
     Add_Sub_Selector => Add_Sub_Selector,
     Jump_Flag => Jump_Flag
