@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../MP2_Final.srcs/sources_1/new/Add_Sub.vhd" \
+"../../../../MP2_Final.srcs/sources_1/new/FA.vhd" \
+"../../../../MP2_Final.srcs/sources_1/new/HA.vhd" \
+"../../../../MP2_Final.srcs/sim_1/imports/Microprocessor_Design_Comp/Add_Sub_TB.vhd" \
+
+# Do not sort compile order
+nosort

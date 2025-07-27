@@ -1,0 +1,769 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon May 26 19:03:14 2025
+# Process ID: 21468
+# Current directory: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9560 C:\Users\Himandhi\Downloads\Nanoprocessor\MP2_Final\MP2_Final.xpr
+# Log file: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/vivado.log
+# Journal file: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Himandhi/Downloads/MP2_Final/MP2_Final/MP2_Final' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon May 26 19:04:05 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/synth_1/runme.log
+[Mon May 26 19:04:05 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1737.461 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1737.461 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1850.207 ; gain = 884.191
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183A8A8DFA" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+set_property PROGRAM.FILE {C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/impl_1/Nanoprocessor_Interface.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/impl_1/Nanoprocessor_Interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+ERROR: [Labtools 27-3165] End of startup status: LOW
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/impl_1/Nanoprocessor_Interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+export_ip_user_files -of_objects  [get_files C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Nanoprocessor_TOP.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Nanoprocessor_TOP.vhd
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+export_ip_user_files -of_objects  [get_files C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Slow_Clk.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Slow_Clk.vhd
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon May 26 19:08:45 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/impl_1/Nanoprocessor_Interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon May 26 19:10:23 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/synth_1/runme.log
+[Mon May 26 19:10:23 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+set_property PROGRAM.FILE {C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/impl_1/Nanoprocessor_Interface.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/impl_1/Nanoprocessor_Interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+ERROR: [Labtools 27-3165] End of startup status: LOW
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/impl_1/Nanoprocessor_Interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A8DFA
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/new/Program_Counter_TB.vhd w ]
+add_files -fileset sim_1 C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/new/Program_Counter_TB.vhd
+update_compile_order -fileset sim_1
+set_property top Program_Counter_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Program_Counter_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Program_Counter_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Program_Counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Program_Counter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/new/Program_Counter_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Program_Counter_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed1c0aa09854c57b03b65743a02c5bb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Program_Counter_TB_behav xil_defaultlib.Program_Counter_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Program_Counter [program_counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.program_counter_tb
+Built simulation snapshot Program_Counter_TB_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim/xsim.dir/Program_Counter_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May 26 19:14:33 2025...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Program_Counter_TB_behav -key {Behavioral:sim_1:Functional:Program_Counter_TB} -tclbatch {Program_Counter_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Program_Counter_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Program_Counter_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2566.027 ; gain = 16.535
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/UOM/CSE-2ndsemester/Microprocessor_Design_Comp/Add_Sub_TB.vhd
+update_compile_order -fileset sim_1
+set_property top Add_Sub_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Add_Sub_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Add_Sub_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Add_Sub.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Add_Sub
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/HA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/imports/Microprocessor_Design_Comp/Add_Sub_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Add_Sub_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed1c0aa09854c57b03b65743a02c5bb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Add_Sub_TB_behav xil_defaultlib.Add_Sub_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_Sub [add_sub_default]
+Compiling architecture behavioral of entity xil_defaultlib.add_sub_tb
+Built simulation snapshot Add_Sub_TB_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim/xsim.dir/Add_Sub_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May 26 19:16:10 2025...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Add_Sub_TB_behav -key {Behavioral:sim_1:Functional:Add_Sub_TB} -tclbatch {Add_Sub_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Add_Sub_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Add_Sub_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2584.094 ; gain = 10.531
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/new/TB_Three_Bit_Adder.vhd w ]
+add_files -fileset sim_1 C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/new/TB_Three_Bit_Adder.vhd
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/new/Nanoprocessor_TOP_TB.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/new/Nanoprocessor_TOP_TB.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/new/Mux_2_way_3_bit_TB.vhd w ]
+add_files -fileset sim_1 C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/new/Mux_2_way_3_bit_TB.vhd
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/new/Mux_8_way_4_bit_TB.vhd w ]
+add_files -fileset sim_1 C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/new/Mux_8_way_4_bit_TB.vhd
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Add_Sub_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Add_Sub_TB_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed1c0aa09854c57b03b65743a02c5bb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Add_Sub_TB_behav xil_defaultlib.Add_Sub_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Add_Sub_TB_behav -key {Behavioral:sim_1:Functional:Add_Sub_TB} -tclbatch {Add_Sub_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Add_Sub_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Add_Sub_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+set_property top InstructionDecoder_Bottomhalf_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'InstructionDecoder_Bottomhalf_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj InstructionDecoder_Bottomhalf_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Instruction_Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Instruction_Decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/new/InstructionDecoder_Bottomhalf_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity InstructionDecoder_Bottomhalf_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed1c0aa09854c57b03b65743a02c5bb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot InstructionDecoder_Bottomhalf_TB_behav xil_defaultlib.InstructionDecoder_Bottomhalf_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.instructiondecoder_bottomhalf_tb
+Built simulation snapshot InstructionDecoder_Bottomhalf_TB_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim/xsim.dir/InstructionDecoder_Bottomhalf_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May 26 19:23:09 2025...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "InstructionDecoder_Bottomhalf_TB_behav -key {Behavioral:sim_1:Functional:InstructionDecoder_Bottomhalf_TB} -tclbatch {InstructionDecoder_Bottomhalf_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source InstructionDecoder_Bottomhalf_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'InstructionDecoder_Bottomhalf_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2596.918 ; gain = 5.469
+set_property top Decoder_3_8 [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/synth_1
+
+launch_runs impl_1 -jobs 6
+[Mon May 26 19:27:02 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/synth_1/runme.log
+[Mon May 26 19:27:02 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Decoder_3_8
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 2718.027 ; gain = 113.473
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Decoder_3_8' [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Decoder_3_8.vhd:41]
+INFO: [Synth 8-226] default block is never used [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Decoder_3_8.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_3_8' (1#1) [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Decoder_3_8.vhd:41]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 2758.043 ; gain = 153.488
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 2758.043 ; gain = 153.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 2758.043 ; gain = 153.488
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc]
+WARNING: [Vivado 12-584] No ports matched 'Clk'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Clk'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Clk'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:9]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports Clk]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:9]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'LED_Data[0]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED_Data[0]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED_Data[1]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED_Data[1]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED_Data[2]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED_Data[2]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED_Data[3]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED_Data[3]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Zero'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Zero'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Overflow'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Overflow'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSeg_Data[0]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSeg_Data[0]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSeg_Data[1]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSeg_Data[1]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSeg_Data[2]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSeg_Data[2]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSeg_Data[3]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSeg_Data[3]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSeg_Data[4]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSeg_Data[4]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSeg_Data[5]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSeg_Data[5]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSeg_Data[6]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSeg_Data[6]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN_Select[0]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN_Select[0]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN_Select[1]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN_Select[1]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN_Select[2]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN_Select[2]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN_Select[3]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN_Select[3]'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Reset'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Reset'. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/constrs_1/imports/MP_Final/Nanoprocessor.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2855.594 ; gain = 251.039
+6 Infos, 39 Warnings, 39 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+set_property top Nanoprocessor [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon May 26 19:29:15 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/synth_1/runme.log
+[Mon May 26 19:29:15 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/impl_1/runme.log
+set_property top Nanoprocessor_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon May 26 19:31:24 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/impl_1/runme.log
+set_property top Nanoprocessor_Interface [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon May 26 19:32:03 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/synth_1/runme.log
+[Mon May 26 19:32:03 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nanoprocessor_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Nanoprocessor_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/3_Bit_Adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Three_Bit_Adder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Decoder_3_8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Decoder_3_8
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Mux_2_way_3_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2_way_3_bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Mux_2_way_4_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2_way_4_bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Mux_8_way_4_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_8_Way_4_Bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Nanoprocessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Nanoprocessor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Program_ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Program_ROM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Register_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Register_4bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/new/Register_Bank.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Register_Bank
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sources_1/imports/new/Slow_Clk.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Slooow_Ckk
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/new/Nanoprocessor_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Nanoprocessor_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed1c0aa09854c57b03b65743a02c5bb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nanoprocessor_TB_behav xil_defaultlib.Nanoprocessor_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Slooow_Ckk [slooow_ckk_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Three_Bit_Adder [three_bit_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_way_3_bit [mux_2_way_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Program_Counter [program_counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Program_ROM [program_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_way_4_bit [mux_2_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_8 [decoder_3_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_4bit [register_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_8_Way_4_Bit [mux_8_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_Sub [add_sub_default]
+Compiling architecture behavioral of entity xil_defaultlib.Nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor_tb
+Built simulation snapshot Nanoprocessor_TB_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim/xsim.dir/Nanoprocessor_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May 26 19:33:34 2025...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nanoprocessor_TB_behav -key {Behavioral:sim_1:Functional:Nanoprocessor_TB} -tclbatch {Nanoprocessor_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Nanoprocessor_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nanoprocessor_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2873.625 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/new/InstructionDecoder_Bottomhalf_TB.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/new/InstructionDecoder_Bottomhalf_TB.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/new/Instruction_Decoder_TB.vhd w ]
+add_files -fileset sim_1 C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.srcs/sim_1/new/Instruction_Decoder_TB.vhd
+update_compile_order -fileset sim_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon May 26 19:36:26 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon May 26 19:40:38 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/synth_1/runme.log
+[Mon May 26 19:40:38 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_sim simulation_4
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_sim simulation_3
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 26 19:42:50 2025...
