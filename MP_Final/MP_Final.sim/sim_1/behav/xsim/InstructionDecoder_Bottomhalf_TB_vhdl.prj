@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../MP_Final.srcs/sources_1/new/Instruction_Decoder.vhd" \
-"../../../../MP_Final.srcs/sim_1/new/InstructionDecoder_Bottomhalf_TB.vhd" \
-
-# Do not sort compile order
-nosort
