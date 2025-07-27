@@ -28,7 +28,5 @@ The processor is composed of the following modules:
 ### 🧾 Control
 - **Instruction Decoder**: Translates 4-bit opcodes into control signals for other units.
 
----
 
-## 📁 Folder Structure
 
