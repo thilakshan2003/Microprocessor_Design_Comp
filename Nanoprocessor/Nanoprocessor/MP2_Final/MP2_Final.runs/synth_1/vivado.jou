@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon May 26 19:40:39 2025
+# Process ID: 4912
+# Current directory: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/synth_1
+# Command line: vivado.exe -log Nanoprocessor_Interface.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Nanoprocessor_Interface.tcl
+# Log file: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/synth_1/Nanoprocessor_Interface.vds
+# Journal file: C:/Users/Himandhi/Downloads/Nanoprocessor/MP2_Final/MP2_Final.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Nanoprocessor_Interface.tcl -notrace
